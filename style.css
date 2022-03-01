@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.intro_section{
+    padding-top: 190px;
+}
+
+.big_name{
+    font-family: 'Archivo Black', sans-serif;
+    color: #111111;
+    font-size:220px;
+    line-height: 244px;
+    text-align: start;
+    letter-spacing: -8.04px;
+}
+
+.designation>h3{
+    font-family: 'Tangerine', cursive;
+    font-size: 50px;
+    font-weight:700;
+    color: #111111;
+}
+
+.intro_div>p{
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111111;
+}
+
+.nav_list{
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+ 
+.ul_hover_effect {
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    position: relative;
+  }
+  
+  .ul_hover_effect::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.7px;
+    background-color: #111111;
+    transition: width 0.50s ease-out;
+  }
+  .ul_hover_effect:hover::before {
+    width: 100%;
+  }
+
+
+
+@media only screen and (max-width: 600px) {
+    .intro_section{
+        padding-top: 50px;
+    }
+    .big_name{
+        font-family: 'Archivo Black', sans-serif;
+        color: #111111;
+        font-size:60px;
+        font-weight:500;
+        line-height: 150px;
+        letter-spacing: 0px;
+    }
+    .designation{
+        padding-bottom: 30px;
+    }
+    .designation>h3{
+        font-family: 'Tangerine', cursive;
+        font-size: 30px;
+        font-weight:500;
+        color: #111111;
+    }
+
+    .nav_list{
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+  }
