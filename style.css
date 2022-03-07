@@ -2,9 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    font-family: 'Montserrat', sans-serif;
 }
  
-
+.intro_section{
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
 
 .big_name{
     font-family: 'Archivo Black', sans-serif;
@@ -23,15 +27,13 @@
     color: #111111;
 }
 
-.intro_div>p{
-    font-family: Montserrat, sans-serif;
+.common_p{
     font-size: 16px;
     line-height: 24px;
     color: #111111;
 }
 
 .nav_list{
-    font-family: Montserrat, sans-serif;
     font-size: 16px;
     line-height: 24px;
 }
@@ -70,11 +72,11 @@
     color: black;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 40px;
+    font-weight: 200;
 }
 
 .about_me>p{
     color: black;
-    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     letter-spacing: -1.00px;
 }
@@ -97,6 +99,42 @@
     background: rgb(44, 43, 43);
 }
 
+.skill_section{
+    background-color: #ec5239;
+    margin-top: 120px;
+    padding: 120px 30px 0px 50px;
+}
+
+.skill_fonts{
+    color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+li{
+    color: #111111;
+    font-weight: bold;
+}
+
+.svg_icon{
+    height:50px;
+    width: 50px;
+    transition: transform 0.5s ease-in;
+    
+}
+
+.svg_icon:hover{
+    transform: rotate(38deg);
+}
+
+.skills_p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #111111;
+}
+
 
 @media only screen and (max-width: 600px) {
     .big_name{
@@ -107,6 +145,7 @@
         line-height: 150px;
         letter-spacing: 0px;
     }
+
     .designation{
         padding-bottom: 30px;
     }
@@ -118,7 +157,6 @@
     }
 
     .nav_list{
-        font-family: Montserrat, sans-serif;
         font-size: 14px;
         line-height: 20px;
     }
@@ -135,6 +173,32 @@
         font-size: 15px;
     }
 
+    .svg_icon{
+        height:18px;
+        width: 18px;
+    }
+
+    .skill_fonts{
+        font-size: 24px;
+    
+    }
+
+    .skills_p,li{
+        font-size: 15px;
+        line-height: 20px;
+        color: #111111;
+    }
+
+
+  }
+
+
+
+
+  @media (min-width: 426px) and (max-width: 768px) {
+    .skill_fonts{
+        font-size: 50px;
+    }
   }
 
 
