@@ -103,6 +103,7 @@
     background-color: #ec5239;
     margin-top: 120px;
     padding: 120px 30px 0px 50px;
+    padding-bottom: 200px;
 }
 
 .skill_fonts{
@@ -122,7 +123,7 @@ li{
     height:50px;
     width: 50px;
     transition: transform 0.5s ease-in;
-    
+
 }
 
 .svg_icon:hover{
@@ -134,6 +135,73 @@ li{
     line-height: 24px;
     color: #111111;
 }
+
+.project_section{
+    padding-top: 150px;
+    background: #1d1c1d;
+    padding-bottom: 100px;
+}
+
+.projects_H{
+    color: #dedad8;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 200px;
+    letter-spacing:2px;
+    line-height: 200px;
+}
+
+.svg_icon_project{
+    height:60px;
+    width: 60px;
+}
+
+.circle_container{
+    background: #dedad8;
+    height: 300px;
+    width: 300px;
+    border-radius:50%;
+    color:black;
+    transform: rotate(-30deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.circle_container:hover{
+    transform: rotate(0deg);
+    background: #ec5239;
+}
+
+.git_btn-anchor{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.card{
+    background: rgb(36, 35, 35) !important;
+    border-radius:4% !important;
+    font-family: 'Montserrat', sans-serif ;
+}
+
+.card_tittle{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+}
+
+.tech_info{
+    font-size: 11px;
+}
+
+.project_desc{
+    font-size: 13px;
+    
+}
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 600px) {
@@ -188,16 +256,63 @@ li{
         line-height: 20px;
         color: #111111;
     }
+    
+    .projects_H{
+        color: #dedad8;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 70px;
+        letter-spacing:2px;
+        line-height: 70px;
+    }
+
+    .projects_H_p{
+        font-size: 15px;
+    }
+
+    .svg_icon_project{
+        height:40px;
+        width: 40px;
+    }
+
+    .circle_container{
+        height: 200px;
+        width: 200px;
+    }
+    
+    .circle_container:hover{
+        transform: rotate(0deg);
+        background: #ec5239;
+    }
+    
 
 
   }
 
 
+  @media (max-width: 375px) {
+    .Card_2{
+        width: 17em !important;
+    }
 
+    .Card_3{
+        width: 17em !important;
+    }
+  }
 
   @media (min-width: 426px) and (max-width: 768px) {
     .skill_fonts{
         font-size: 50px;
+    }
+    .projects_H{
+        color: #dedad8;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 100px;
+        letter-spacing:2px;
+        line-height: 100px;
+    }
+
+    .projects_H_p{
+        font-size: 20px;
     }
   }
 
