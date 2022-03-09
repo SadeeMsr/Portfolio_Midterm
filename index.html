@@ -28,7 +28,8 @@
     ></script>
   </head>
   <body>
-    <!------------------------------------------------------------- Intro ------------------------------------------->
+
+    <!------------------------------------------------------------- Intro STARTS------------------------------------------->
     <div class="container-fluid ps-lg-5 intro_section">
       <div class="row">
         <div class="col-6">
@@ -74,13 +75,13 @@
               <a class="nav-link text-muted ul_hover_effect" href="#mySkills"
                 >Skills</a
               >
-              <a class="nav-link text-muted ul_hover_effect" href="#"
+              <a class="nav-link text-muted ul_hover_effect" href="#project"
                 >Projects</a
               >
-              <a class="nav-link text-muted ul_hover_effect" href="#"
+              <a class="nav-link text-muted ul_hover_effect" href="#education"
                 >Educations</a
               >
-              <a class="nav-link text-muted ul_hover_effect" href="#"
+              <a class="nav-link text-muted ul_hover_effect" href="#contact"
                 >Contact</a
               >
             </nav>
@@ -88,11 +89,18 @@
         </div>
       </div>
     </div>
+    <!------------------------------------------------------------- Intro END ------------------------------------------->
 
-    <div
-      class="ms-5 me-5"
-      style="border-top: 5px solid black; margin-top: 60px"
-    ></div>
+
+
+
+    <!----------------separator LINE ------------------------------------------------>
+    <div style="padding-top: 90px; background: #dad9da">
+      <div class="ms-5 me-5" style="border-top: 5px solid black"></div>
+    </div>
+
+
+
 
     <!----------------------------------------------------- about me section -------------------------------------------------------------------------->
     <div class="about_section" id="aboutme">
@@ -130,10 +138,47 @@
               contribute my skills both in coding and business to help a company
               achieve their goals
             </p>
-            <div class="custom_btn shadow-lg">
+
+
+            <!---------- Bootstrap RESUME BUTTON Modal Component --------->
+            <div
+              class="custom_btn shadow-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
               View My Resume <span class="lnr lnr-arrow-right ps-2 fs-2"></span>
             </div>
+
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content" style="background: #cba5ea">
+                  <div class="row">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="">
+                        <div class="modal-body">Resume will be added soon. Sorry for the inconvenience!</div>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn-close pe-5"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
+
+          <!------------------------- My Image ----------------------->
           <div
             class="col-md-12 col-lg-6 d-flex justify-content-center align-items-center"
           >
@@ -143,11 +188,16 @@
               alt="My profile pic"
             />
           </div>
+
+
         </div>
       </div>
     </div>
 
-    <!------------------------------------------------------ skills section ------------------------------------------------------------------------>
+
+
+
+    <!------------------------------------------------------ skills section STARTS ------------------------------------------------------------------------>
     <div class="skill_section" id="mySkills">
       <div class="container-fluid">
         <div class="row">
@@ -161,7 +211,10 @@
                 <b>SKILLS I HAVE FOR ?</b>
               </h6>
             </div>
-            <!-----------------------------------Accordion 01 ------------------------------------------->
+
+
+
+            <!----------------------------------- Bootstrap Accordion Component 01 : Front end ------------------------------------------->
             <div class="accordion-flush" id="accordionFlushExample">
               <div style="border-bottom: 1.5px solid black">
                 <div
@@ -237,8 +290,8 @@
                 </div>
               </div>
 
-              <!---------------------------------- Accordion 02 ------------------------------------->
 
+              <!----------------------------------  Bootstrap Accordion Component 02: Back-end ------------------------------------->
               <div style="border-bottom: 1.5px solid black">
                 <div
                   class="d-flex justify-content-between align-items-center skill_fonts collapsed"
@@ -304,7 +357,8 @@
                 </div>
               </div>
 
-              <!-------------------------------Accordion 03 -------------------------------------->
+
+              <!------------------------------- Bootstrap Accordion Component 03: DApp -------------------------------------->
               <div style="border-bottom: 1.5px solid black">
                 <div
                   class="d-flex justify-content-between align-items-center skill_fonts collapsed"
@@ -372,7 +426,9 @@
                 </div>
               </div>
 
-              <!------------------------------ Accordion 04 ----------------------------------->
+
+
+              <!------------------------------  Bootstrap Accordion Component 04: Smart Contract ----------------------------------->
               <div style="border-bottom: 1.5px solid black">
                 <div
                   class="d-flex justify-content-between align-items-center skill_fonts collapsed"
@@ -420,7 +476,8 @@
                 </div>
               </div>
 
-              <!--------------------------- Accordion 05 ---------------------------------------->
+
+              <!---------------------------  Bootstrap Accordion Component 05: Programming ---------------------------------------->
               <div style="border-bottom: 1.5px solid black">
                 <div
                   class="d-flex justify-content-between align-items-center skill_fonts collapsed"
@@ -483,10 +540,17 @@
         </div>
       </div>
     </div>
+    <!------------------------------------------------------ skills section ENDS ------------------------------------------------------------------------>
 
-    <!--------------------------------------------- Projects Deck ---------------------------------------------------------------->
+
+
+
+
+
+
+    <!--------------------------------------------- Projects Deck STARTS ---------------------------------------------------------------->
     <div class="project_section">
-      <div class="container-fluid text-light">
+      <div class="container-fluid text-light" id="project">
         <div class="row">
           <div class="col-2"></div>
           <div class="col">
@@ -510,7 +574,7 @@
         <!-------------------- github button circle ---------------------------->
         <div class="row mt-5">
           <div class="pt-md-5 d-flex justify-content-center align-items-center">
-            <a href="" class="git_btn-anchor">
+            <a href="https://github.com/SadeeMsr" class="git_btn-anchor">
               <div
                 class="circle_container d-flex justify-content-center align-items-center"
               >
@@ -602,14 +666,15 @@
                 <div class="card-body">
                   <h5 class="card_tittle">Project Kicker</h5>
                   <p class="tech_info text-muted">
-                    React JS, web3.js, Recharts, Truffle, Ganache-CLI, Mocha,metamask,
-                    solidity, Ethereum Blockchain
+                    React JS, web3.js, Recharts, Truffle, Ganache-CLI,
+                    Mocha,metamask, solidity, Ethereum Blockchain
                   </p>
                   <p class="project_desc">
-                    An crowd funding application powered by smart contract that
-                    collects fund for students' projects / startups. A voting
-                    protocol and metamask authentication is implemented in smart contract that
-                    can almost nullify the fraud transference of money.
+                    An crowd funding web application powered by smart contract
+                    that collects fund for students' projects / startups. A
+                    voting protocol and metamask authentication is implemented
+                    in smart contract that can almost nullify the fraud
+                    transference of money.
                   </p>
                 </div>
               </div>
@@ -637,11 +702,13 @@
                     solidity, Ethereum Blockchain
                   </p>
                   <p class="project_desc">
-                    An NFT market place that allows users to create, buy, sell and do auction for a nft. 
+                    An NFT market place that allows users to create, buy, sell
+                    and do auction for a nft.
                   </p>
                 </div>
               </div>
             </div>
+
 
             <!------------------------- Card-4 ----------------------->
             <div
@@ -662,15 +729,237 @@
                 <div class="card-body">
                   <h5 class="card_tittle">Brush Bros</h5>
                   <p class="tech_info text-muted">
-                    React JS, Bootstrap, Stripe payment, JWT, Node JS, express JS, MongoDB 
+                    React JS, Bootstrap, Stripe payment, JWT, Node JS, express
+                    JS, MongoDB
                   </p>
                   <p class="project_desc">
-                    A Handyman service providing application where each user can pre-book services. Admin can see bookings, accepts payments, add and edit new services, update booking status for users.  
+                    A Handyman service providing web application where each user
+                    can pre-book services. Admin can see bookings, accepts
+                    payments, add and edit new services, update booking status
+                    for users.
                   </p>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------- Projects Deck ENDS ---------------------------------------------------------------->
 
+
+
+
+
+    <!------------------------------------ Eduction section --------------------------------------------->
+    <div class="education_section">
+      <div class="container" id="education">
+        <div class="row edu_row">
+          <div class="col d-flex align-items-center">
+            <h1 class="education_H">Education</h1>
+          </div>
+          <div class="col edu_Info_container">
+            <div class="d-flex pb-2" style="border-bottom: 3px solid black">
+              <img
+                class="img-fluid iub_logo"
+                src="images/Independent-University-Bangladesh-IUB-logo-e1605320868365.png"
+                alt="univarsity_logo"
+              />
+              <h3 class="ps-3">Independent University, Bangladesh</h3>
+            </div>
+            <div>
+              <h4>
+                Computer Science <span class="text-muted fs-6">(Major)</span>
+              </h4>
+              <p class="text-muted">2019 - studying</p>
+              <p>
+                Maintaining my CGPA at 3.33 out of 4.00 . I spend hours
+                hardworking on learning & exploring new technologies and
+                building new stuff rather than being fixated on the university
+                curriculum. Working as a webmaster at IEEE club (IUB) for
+                extracurricular activities.
+              </p>
+            </div>
+            <div class="mt-5 course-work_container">
+              <h3 style="border-bottom: 3px solid black">
+                Relevant Course-works
+              </h3>
+              <p>Some significant courses I have completed at my institution</p>
+              <li>01. CSC201: Discrete Mathematics</li>
+              <li>02. CSC203: Data Structure</li>
+              <li>03. CSC306: Algorithms</li>
+              <li>04. CSC305: Object-Oriented Programming</li>
+              <li>05. CSC401: Database Management</li>
+              <li>06. CSC430: Data Communication and Networking</li>
+              <li>07. CSC455: Web Applications and Internet</li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-----------------------------------------------Contact section ---------------------------------------------->
+    <div class="contact_section" id="contact">
+      <div class="container">
+        <div>
+          <p class="contact_H pe-5">
+            You got a cool job in mind for me? Let's grab a coffee to set me up
+            for an interview. I can be a valuable asset to your
+            <span class="brand"> brand! </span>
+          </p>
+        </div>
+
+        <div>
+          <div class="d-flex justify-content-center">
+            <p>
+              <b class="text-success pe-1"
+                ><i class="fa-solid fa-circle" style="font-size: 11px"></i>
+                Available</b
+              >
+              for part-time / full-time(Remote) / freelance works
+            </p>
+          </div>
+          <div class="d-md-flex justify-content-center">
+            <p class="contact_p_2nd">
+              Get in touch!
+              <span class="hidden_p1"
+                ><i
+                  ><b><u>Drop me an email</u></b></i
+                >
+                at
+                <i
+                  ><b><u>srrohan333@gmail.com</u></b></i
+                ></span
+              >
+            </p>
+          </div>
+          <p class="hidden_p2">
+            <i
+              ><b><u>Drop me an email</u></b></i
+            >
+            at
+            <i
+              ><b><u>srrohan333@gmail.com</u></b></i
+            >
+          </p>
+        </div>
+
+
+        <!----------- small circle --------------->
+        <div class="hidden_p1">
+          <div class="pt-md-5 d-flex justify-content-center align-items-center">
+            <div
+              class="circle_container_footer1 me-5 mt-5 d-flex justify-content-center align-items-center"
+            >
+              <div>
+                <div class="d-flex justify-content-center align-items-center">
+                  <svg
+                    version="1.1"
+                    class="svg_icon_footer1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 512.035 512.035"
+                    style="enable-background: new 0 0 512.035 512.035"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g>
+                        <path
+                          d="M267.947,256.017L509.44,14.524c2.56-2.56,3.413-5.973,1.707-9.387c-0.853-3.413-4.267-5.12-7.68-5.12H256
+			c-2.56,0-4.267,0.853-5.973,2.56L2.56,250.044c-3.413,3.413-3.413,8.533,0,11.947l247.467,247.467
+			c1.707,1.707,3.413,2.56,5.973,2.56h247.467c3.413,0,6.827-1.707,7.68-5.12c1.707-3.413,0.853-6.827-1.707-9.387L267.947,256.017z
+			 M259.413,494.951L20.48,256.017L259.413,17.084h223.573l-232.96,232.96c-3.413,3.413-3.413,8.533,0,11.947l232.96,232.96H259.413
+			z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <p class="pt-4">Get in touch</p>
+              </div>
+            </div>
+
+            
+
+            <!----------- big circle --------------->
+            <div
+              class="circle_container_footer2 d-flex justify-content-center align-items-center"
+            >
+              <div>
+                <div class="d-flex justify-content-center align-items-center">
+                  <svg
+                    version="1.1"
+                    class="svg_icon_project"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 512.035 512.035"
+                    style="enable-background: new 0 0 512.035 512.035"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g>
+                        <path
+                          d="M509.475,250.044L262.008,2.577c-1.707-1.707-3.413-2.56-5.973-2.56H8.568c-3.413,0-6.827,1.707-7.68,5.12
+              c-1.707,3.413-0.853,6.827,1.707,9.387l241.493,241.493L2.595,497.511c-2.56,2.56-2.56,5.973-1.707,9.387
+              c0.853,3.413,4.267,5.12,7.68,5.12h247.467c2.56,0,4.267-0.853,5.973-2.56l247.467-247.467
+              C512.888,258.577,512.888,253.457,509.475,250.044z M252.621,494.951H29.048l232.96-232.96c3.413-3.413,3.413-8.533,0-11.947
+              L29.048,17.084h223.573l238.933,238.933L252.621,494.951z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="pt-4 circle_links">
+                  <a
+                    href="https://www.linkedin.com/in/md-sadee-rohan-4180a7211/"
+                    >Linkedin</a
+                  >
+                  <a href="https://github.com/SadeeMsr">Github</a>
+                  <a href="https://www.facebook.com/SadeeMsr">Facebook</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!------------------------------------------------ Footer section -------------------------------------------------->
+
+    <div class="footer_section">
+      <div class="container-fluid">
+        <div class="row d-flex">
+          <div class="col-md-6 col-sm-12 d-flex align-items-center">
+            <p class="text-muted footer_text">
+              &copy All rights reserved | Designed and Build by
+              <span class="text-primary">Rohan</span>
+            </p>
+          </div>
+          <div class="col-md-6 col-sm-12 d-flex justify-content-md-end">
+            <a href="https://github.com/SadeeMsr"
+              ><i class="fa-brands fa-github fs-4 pe-2"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/md-sadee-rohan-4180a7211/"
+              ><i class="fa-brands fa-linkedin fs-4 pe-2"></i
+            ></a>
+            <a href="https://www.facebook.com/SadeeMsr"
+              ><i class="fa-brands fa-facebook fs-4 pe-2"></i
+            ></a>
+            <a href="https://twitter.com/RohanSadee"
+              ><i class="fa-brands fa-twitter fs-4 pe-2"></i
+            ></a>
           </div>
         </div>
       </div>

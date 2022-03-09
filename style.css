@@ -4,10 +4,10 @@
     box-sizing: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
  
 .intro_section{
-    overflow-y: hidden;
-    scroll-behavior: smooth;
+    background: #dad9da
 }
 
 .big_name{
@@ -59,7 +59,9 @@
   }
 
 .about_section{
-    margin-top:55px;
+    padding-top:55px;
+    padding-bottom: 150px;
+    background: #dad9da
 }
 
 .about_me>h1{
@@ -101,7 +103,12 @@
 
 .skill_section{
     background-color: #ec5239;
-    margin-top: 120px;
+    padding: 120px 30px 0px 50px;
+    padding-bottom: 200px;
+}
+
+.skill_div{
+    background-color: #ec5239;
     padding: 120px 30px 0px 50px;
     padding-bottom: 200px;
 }
@@ -110,7 +117,7 @@
     color: black;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 70px;
-    font-weight: 500;
+    font-weight: bolder;
     cursor: pointer;
 }
 
@@ -139,7 +146,7 @@ li{
 .project_section{
     padding-top: 150px;
     background: #1d1c1d;
-    padding-bottom: 100px;
+    padding-bottom: 250px;
 }
 
 .projects_H{
@@ -198,11 +205,130 @@ li{
 }
 
 
+.education_section{
+    background: #dad9da;
+    padding-bottom: 250px;
+    padding-top: 150px;
+}
+
+.education_H{
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.edu_row{
+    padding-top:100px;
+}
+
+.edu_Info_container{
+    border-left: 3px solid black;
+}
+
+.iub_logo{
+    width:80px;
+    border-radius:50%
+}
+
+.course-work_container>li{
+    list-style: none;
+}
+
+
+.contact_section{
+    background: #dad9da;
+    padding-bottom: 100px;
+}
+
+.contact_H{
+    font-size: 70px;
+    line-height: 100px;
+    font-weight: 200;
+    letter-spacing:-2px;
+}
+
+.brand{
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    color: #ec5239
+}
+
+.contact_p_2nd{
+    line-height: 10px;
+}
+
+.hidden_p2{
+    display: none;
+}
+
+.circle_container_footer1{
+    background: white;
+    height: 150px;
+    width: 150px;
+    border-radius:50%;
+    color: black;
+    transform: rotate(35deg);
+    transition: all 0.5s ease-in-out;
+    fill: black;
+    font-weight: bold;
+    font-size:12px;
+}
+
+.circle_container_footer1:hover{
+    transform: rotate(0deg);
+    background: black;
+    fill: white;
+    color:white;
+    
+}
+
+.svg_icon_footer1{
+    height:50px;
+    width: 50px;
+}
+
+
+.circle_container_footer2{
+    background: rgb(36, 35, 35);
+    height: 300px;
+    width: 300px;
+    border-radius:50%;
+    color:white;
+    transform: rotate(-30deg);
+    transition: all 0.5s ease-in-out;
+    fill:white
+}
+
+.circle_container_footer2:hover{
+    transform: rotate(0deg);
+    
+}
+
+.circle_links>a{
+    color:white;
+    text-decoration: none;
+}
+
+.footer_section{
+    background: #dad9da;
+    padding-bottom: 60px;
+}
+
+.footer_text{
+    font-size: 12px;
+}
+
+.footer_text>span{
+    font-weight: bolder;
+    font-style: italic;
+}
 
 
 
 
 
+
+/************** NECESSARY Media queries for Small screen *********************/
 
 @media only screen and (max-width: 600px) {
     .big_name{
@@ -229,6 +355,12 @@ li{
         line-height: 20px;
     }
 
+    .about_section{
+        padding-top:55px;
+        padding-bottom: 40px;
+        background: #dad9da
+    }
+
     .about_me>h1{
         font-size: 50px;
     }
@@ -240,10 +372,20 @@ li{
     .about_me>p{
         font-size: 15px;
     }
+    .custom_btn{
+       
+        font-size: 15px;
+        font-weight: 0px;
+       
+    }
 
     .svg_icon{
         height:18px;
         width: 18px;
+    }
+
+    .skill_section{
+        padding-bottom: 120px;
     }
 
     .skill_fonts{
@@ -256,6 +398,11 @@ li{
         line-height: 20px;
         color: #111111;
     }
+
+    .project_section{
+        padding-bottom: 100px;
+    }
+    
     
     .projects_H{
         color: #dedad8;
@@ -283,11 +430,47 @@ li{
         transform: rotate(0deg);
         background: #ec5239;
     }
-    
 
+    .education_section{
+        padding-top: 0px;
+    }
+
+    .edu_Info_container{
+        border-left: none;
+    }
+
+    .education_H{
+        font-size: 50px;
+        line-height: 100px;
+    }
+    
+    .contact_H{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    
+    .brand{
+        font-family: 'Archivo Black', sans-serif;
+        font-weight: 400;
+        color: #ec5239
+    }
+    
+    .contact_p_2nd{
+        line-height: 0px;
+    }
+
+    .hidden_p1{
+        display:none;
+    }
+    
+    .hidden_p2{
+        display: block;
+    }
 
   }
 
+
+  /************** NECESSARY Media queries for Extra Small screen *********************/
 
   @media (max-width: 375px) {
     .Card_2{
@@ -298,6 +481,9 @@ li{
         width: 17em !important;
     }
   }
+
+
+  /************** NECESSARY Media queries for Medium screen *********************/
 
   @media (min-width: 426px) and (max-width: 768px) {
     .skill_fonts{
@@ -318,19 +504,10 @@ li{
 
 
 
+  
 
-
-
-
-
-
-
-
-
-
-
-
-  .area {
+/************** Light Bulb animation part starts *********************/
+.area {
     width: 200px;
     height: 450px;
     animation: swing 1.2s infinite ease-in-out alternate;
@@ -413,3 +590,16 @@ li{
         transform: rotate(-5deg);
     }
 }
+
+/************** Light Bulb animation part ENDS *********************/
+
+
+
+
+
+
+
+
+
+
+
