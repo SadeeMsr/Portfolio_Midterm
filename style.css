@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -210,8 +211,8 @@ li{
 
 .education_section{
     background: #dad9da;
-    padding-bottom: 250px;
-    padding-top: 150px;
+    padding-bottom: 200px;
+    padding-top: 80px;
 }
 
 .education_H{
@@ -436,6 +437,7 @@ li{
 
     .education_section{
         padding-top: 0px;
+        padding-bottom: 150px;
     }
 
     .edu_Info_container{
@@ -595,14 +597,5 @@ li{
 }
 
 /************** Light Bulb animation part ENDS *********************/
-
-
-
-
-
-
-
-
-
 
 
