@@ -183,11 +183,23 @@ li{
     font-weight: bold;
 }
 
-
+.paid_badge{
+    width: 100px;
+    text-align: center;
+    background: rgb(3, 55, 9);
+    position: fixed;
+    transform: rotate(-35deg);
+    left: -15px;
+    top: 8px;
+    
+}
 .card{
     background: rgb(36, 35, 35) !important;
     border-radius:4% !important;
     font-family: 'Montserrat', sans-serif ;
+    min-height: 450px;
+    position: relative;
+    overflow: hidden;
 }
 
 .card:hover{
