@@ -187,7 +187,7 @@ li{
     width: 100px;
     text-align: center;
     background: rgb(3, 55, 9);
-    position: fixed;
+    position: absolute;
     transform: rotate(-35deg);
     left: -15px;
     top: 8px;
