@@ -86,6 +86,7 @@
 .custom_btn{
     height: 65px;
     width: 100%;
+    text-decoration: none;
     background: black;
     display: flex;
     align-items: center;
@@ -99,6 +100,7 @@
 
 .custom_btn:hover{
     background: rgb(44, 43, 43);
+    color: white;
 }
 
 .skill_section{
